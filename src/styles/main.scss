@@ -1,0 +1,21 @@
+@import 'helpers/variables';
+@import 'helpers/mixins';
+@import 'helpers/functions';
+@import 'vendor/libs';
+@import 'base/fonts';
+@import 'base/general';
+@import '../blocks/components/components';
+@import '../blocks/modules/modules';
+@import 'filmstyles/styles';
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+.container {
+    max-width: 1200px;
+    padding: 0 20px;
+    margin: 0 auto;
+}

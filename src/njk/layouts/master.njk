@@ -1,0 +1,21 @@
+{# Dafault meta data #}
+{% if not(title) %}
+    {% set title = "Default title" %}
+{% endif %}
+
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8">
+        <title>{{ title }}</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+        <link href="https://fonts.googleapis.com/css?family=Mitr&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="../styles/main.css"/>
+    </head>
+    <body>
+        <main>
+            {% block content %}{% endblock %}
+        </main>
+        <script src="../js/main.js"></script>
+    </body>
+</html>

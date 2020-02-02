@@ -1,0 +1,16 @@
+extends layouts/default
+
+block variables
+	- const title = "Logos gulp-pug-starter"
+
+block content
+	ul#shop-list.shop-list
+	div
+		| кількість
+		input#txt(type="number")
+		ul#shop-inputs.shop-inputs
+		button#add Додати
+		textarea#area(rows="10")
+		button#buy Купити
+	div
+		textarea#monitor(disabled rows="12")
