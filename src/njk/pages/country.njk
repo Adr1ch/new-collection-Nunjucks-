@@ -1,0 +1,17 @@
+{% set title = "Country list page" %}
+{% extends "layouts/master.njk" %}
+
+{% block content %}
+	<div class="dropdown__wrap">
+		<div class="dropdown__block">
+			<button id="btn" class="choosecountry">choose country you need</button>
+			<div id="dropDown" class="pop__upwrap">
+				<div class="dropdown">
+					<ul id="countlist" class="country__list"></ul>
+				</div>
+				<button id="results" class="results">Show results</button>
+			</div>
+		</div>
+		<div id="result" class="resultsArea"></div>
+	</div>
+{% endblock %}

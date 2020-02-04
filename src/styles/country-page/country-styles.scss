@@ -1,0 +1,88 @@
+.choosecountry {
+    width: 100%;
+    padding: 20px 50px;
+    font-size: 20px;
+    border: none;
+    background-color: gray;
+    color: white;
+    border-radius: 25px;
+}
+.results {
+    padding: 10px 50px;
+    font-size: 20px;
+    margin: 0 auto;
+    display: block;
+    border: none;
+    background-color: gray;
+    color: white;
+    border-radius: 25px;
+}
+.dropdown__wrap {
+   min-width: 900px;
+   display: flex;
+}
+.dropdown__block {
+    width: 500px;
+}
+.dropdown {
+   margin: 5px;
+}
+.country__list {
+   display: flex;
+   flex-direction: column; 
+}
+.dropdown {
+    overflow-y: scroll;
+   padding: 20px;
+   height: 400px;
+   background-color: white;
+}
+.country {
+   border: none;
+   width: 100%;
+    padding: 10px;
+    margin: 10px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    font-size: 20px;
+    background-color: rgb(175, 175, 175);
+    border-radius: 15px;
+}
+.flag__wrap {
+   height: 50px;
+   width: 70px;
+   position: absolute;
+   top: 10px;
+   left: 10px;
+}
+.flag {
+   display: block;
+   height: auto;
+   width: 100%;
+   border-radius: 15px;
+}
+.pop__upwrap {
+   background-color: rgb(214, 214, 214);
+   padding: 10px 5px;
+   border-radius: 15px;
+   visibility: hidden;
+   overflow: hidden;
+   opacity: 0;
+   transition: ease-in-out 0.5s;
+}
+.pop__upwrap.show {
+    visibility: visible;
+   overflow: inherit;
+   opacity: 1;
+}
+.resultsArea {
+   width: 400px;
+   height: 400px;
+   background-color: rgb(175, 175, 175);
+   border-radius: 25px;
+   padding: 25px;
+   font-size: 20px;
+}
