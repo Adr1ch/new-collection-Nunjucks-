@@ -1,18 +1,22 @@
-function getCountries(callback) {
-    var xhr = new XMLHttpRequest();
+function getCountries() {
+			return new Promise(resolve => {
 
-    xhr.open('GET', 'https://restcountries.eu/rest/v2/all', true);
-    xhr.send();
+				var xhr = new XMLHttpRequest();
 
-    xhr.onreadystatechange = function() {
-        if(this.readyState != 4) return;
+				xhr.open('GET', 'https://restcountries.eu/rest/v2/all', true);
+				xhr.send();
 
-        if(this.status != 200) {
-            alert("pomulka" + (this.status ? this.statusText : "zapros ne udalsa"));
-            return;
-        }
+				xhr.onreadystatechange = function() {
+					if(this.readyState != 4) return;
 
-        callback(JSON.parse(this.responseText));
-    }
-}
+					if(this.status != 200) {
+						alert("pomulka" + (this.status ? this.statusText : "zapros ne udalsa"));
+						return;
+					}
+
+					resolve(JSON.parse(this.responseText));
+
+				}
+			})
+		}
 export { getCountries };
