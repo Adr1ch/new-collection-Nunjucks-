@@ -37,9 +37,9 @@ let arrayValue = [];
 
 export { arrayValue };
 
-getCountries(respon => {
-    renderCountries(respon);
-})
+getCountries().then(countriesArr => {
+			renderCountries(countriesArr);
+		})
 
 btn.addEventListener("click", e => {
     dropDown.classList.add("show");
